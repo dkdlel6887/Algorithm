@@ -1,9 +1,9 @@
-# 앞뒤가 같은 문자열 찾기
+# 앞뒤가 같은 문자열 찾기, list 자료구조
 '''
 A A A B
 C C B A
 A C C A
-B A A B
+B A A Bg
 '''
 
 T = 10
