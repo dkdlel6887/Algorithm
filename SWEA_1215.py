@@ -1,3 +1,11 @@
+# 앞뒤가 같은 문자열 찾기
+'''
+A A A B
+C C B A
+A C C A
+B A A B
+'''
+
 T = 10
 for tc in range(1,T+1):
     length = int(input())
