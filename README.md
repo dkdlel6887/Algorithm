@@ -4,4 +4,4 @@
 - BaekJoon
 - Samsung SoftWare Expert Academy
 
-## 하루 '1문제'
+## 하루 '1문제' 도전
