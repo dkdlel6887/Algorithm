@@ -1,10 +1,10 @@
-# 브루투포스, selfnumber
+# 브루트포스, selfnumber
 a = 10000
 a_lst = [0]*a
 for k in range(1, a+1):
     a_lst[k-1] = k
 for n in range(1, a):
-    nl = len(str(n))  # n의 자릿수
+    nl = len(str(n))  # n의 자릿수햐ㅎ
     nplus = 0
     ans = n
     for i in range(nl, 0, -1):
