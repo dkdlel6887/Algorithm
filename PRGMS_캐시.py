@@ -4,7 +4,7 @@
     for i in range(len(cities)):
         len(cities[i]) <= 20
 '''
-#LRU, cache 크기만큼 단어저장, 이미있으면 1 없으면 5 총합
+#LRU, cache 크기만큼 단어저장, 이미있으면 1 없으면 5 총합, 도시명 대소문자 구분 X
 def solution(cacheSize, cities):
     len_c = len(cities)
     stack = [0]*cacheSize
