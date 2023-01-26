@@ -3,7 +3,7 @@
 A A A B
 C C B A
 A C C A
-B A A Bg
+B A A B
 '''
 
 T = 10

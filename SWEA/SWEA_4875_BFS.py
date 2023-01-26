@@ -70,19 +70,18 @@ def bfs_find_short(i, j, N):
     visited = [[0] * N for _ in range(N)]  # 방문처리+이동횟수 표시
     q = []
     q.append((i, j))  # 시작위치 삽입
-    # visited[i][j] = 1   # 거리구할 때 시작위치 포함하면 작성
+    visited[i][j] = 1   # 거리구할 때 시작위치 포함하면 작성
 
     while len(q) > 0:
         i, j = q.pop(0)
+        if maze[i][j] == 3:
+            return visited[i][j]  # 3까지의 최단거리
         for di, dj in [[0, 1], [1, 0], [-1, 0], [0, -1]]:
             ni, nj = i + di, j + dj
             if 0 <= ni < N and 0 <= nj < N and maze[ni][nj] != 1 and visited[ni][nj] == 0:  # 미로범위 내+이동가능숫자+미방문
                 q.append((ni, nj))  # 현위치 삽입
                 visited[ni][nj] = visited[i][j] + 1  # 방문처리+이동한 횟수
                 # for 문 반복하면서 4방향 중 방문가능 경로 큐에 삽입
-                if maze[ni][nj] == 3:
-                    length = visited[ni][nj]  # 3까지의 최단거리
-                    return length
     return 0
 
 T = int(input())

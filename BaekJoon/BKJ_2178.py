@@ -8,7 +8,7 @@ input
 
 output 13
 '''
-
+# bfs 이용하여 최단거리 구하기
 def bfs(N,M):
     visited = [[0]*M for _ in range(N)]
     q = []
