@@ -17,11 +17,13 @@ def solution(s):
 
 '''
 # 다른사람 풀이
-def solution(s):
-
-    s = Counter(re.findall('\d+', s))
-    return list(map(int, [k for k, v in sorted(s.items(), key=lambda x: x[1], reverse=True)]))
-
 import re
 from collections import Counter
+def solution(s):
+
+    s = Counter(re.findall('\d+', s))  # Counter({'2': 4, '1': 3, '3': 2, '4': 1})
+    answer = list(map(int, [k for k, v in sorted(s.items(), key=lambda x: x[1], reverse=True)]))
+    # 원소 개수(v) 기준(key=lambda x:x[1])으로 내림차순하여 원소(k) 리스트에 저장
+    
+    return answer
 '''
